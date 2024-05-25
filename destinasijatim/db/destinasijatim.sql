@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 25, 2024 at 06:25 AM
+-- Generation Time: May 25, 2024 at 04:16 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -135,7 +135,11 @@ INSERT INTO `galeri` (`id`, `jenis_wisata`, `nama_tempat`, `foto`) VALUES
 (53, 'Wisata Pendidikan', 'Desa Adat Kemiren', 'pendidikan/kemiren1.jpeg'),
 (54, 'Wisata Pendidikan', 'Desa Adat Kemiren', 'pendidikan/kemiren2.jpeg'),
 (55, 'Wisata Pendidikan', 'Desa Adat Kemiren', 'pendidikan/kemiren3.jpeg'),
-(56, 'Wisata Pendiikan', 'Desa Adat Kemiren', 'pendidikan/kemiren4.jpeg');
+(56, 'Wisata Pendiikan', 'Desa Adat Kemiren', 'pendidikan/kemiren4.jpeg'),
+(57, 'Wisata Pendidikan', 'Pusat Penelitian Kopi dan Kakao', 'pendidikan/kopidancoklat1.jpeg'),
+(58, 'Wisata Pendidikan', 'Pusat Penelitian Kopi dan Kakao', 'pendidikan/kopidancoklat2.jpeg'),
+(59, 'Wisata Pendidikan', 'Pusat Penelitian Kopi dan Kakao', 'pendidikan/kopidancoklat3.jpeg'),
+(60, 'Wisata Pendiikan', 'Pusat Penelitian Kopi dan Kakao', 'pendidikan/kopidancoklat4.jpeg');
 
 -- --------------------------------------------------------
 
