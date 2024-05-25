@@ -566,6 +566,7 @@ $events = $req->fetchAll();
 
 
 <section id="work" class="work work-section">
+
   <hr style="height:2px;width:100%;color:gray;background-color:gray">
   <div class="col-md-8 col-md-offset-2 text-center">
     <h3 style="font-weight: 500">CIMORY DIARY PRIGEN</h3>
@@ -611,7 +612,7 @@ $events = $req->fetchAll();
   <hr style="height:2px;width:100%;color:gray;background-color:gray">
   <div class="col-md-8 col-md-offset-2 text-center">
     <h3 style="font-weight: 500">DESA ADAT KEMIREN</h3>
-    <h7>Berikut Adalah Gallery Wisata Pendidikan Cimory Diary Prigen , Tempat ini memberikan pengetahuan tentang peternakan dan produksi susu. </h7>
+    <h7>Berikut Adalah Gallery Wisata Pendidikan Desa Adat Kemiren , Tempat Ini Memberikan Pengetahuan Tentang Keunikan Budaya Lokal dan Mempelajari Kegiatan Sehari-hari Masyarakat. </h7>
     <br>
     <br>
     <br>
@@ -623,6 +624,48 @@ $events = $req->fetchAll();
   include "koneksi.php";
   
   $query = "SELECT * FROM galeri WHERE nama_tempat = 'Desa Adat Kemiren'"; // Query untuk menampilkan semua data galeri
+  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+  
+  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
+    ?>
+      <div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> 
+      <div class="object-fit-cover" style="width: 330px; height: 250px;">
+      <a <?php echo "href='images/foto/".$data['foto']."'"     ;?>  class="work-box">
+        <?php echo "<img src='images/foto/".$data['foto']."'>";?>
+        </div> 
+        <br>
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5><?php echo "".$data['jenis_wisata'].""; ?></h5>
+            <p> <?php echo "".$data['nama_tempat'].""; ?></p>
+          </div>
+        </div>
+        </a>
+      </div>
+      </div>
+      <br>
+    <?php
+  }
+    ?>
+  </div>
+  </div>
+
+  <hr style="height:2px;width:100%;color:gray;background-color:gray">
+  <div class="col-md-8 col-md-offset-2 text-center">
+    <h3 style="font-weight: 500">PUSAT PENELITIAN KOPI DAN KAKAO</h3>
+    <h7>Berikut Adalah Gallery Wisata Pendidikan Pusat Penelitian Kopi dan Kakao , Tempat Ini Memberikan Pengetahuan Tentang Bagaimana Pengembangan Kualitas Kopi dan Kakao. </h7>
+    <br>
+    <br>
+    <br>
+  </div>
+  <hr style="height:2px;width:100%;color:gray;background-color:gray">
+
+  <?php
+  // Load file koneksi.php
+  include "koneksi.php";
+  
+  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Pusat Penelitian Kopi dan Kakao'"; // Query untuk menampilkan semua data galeri
   $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
   
   while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
