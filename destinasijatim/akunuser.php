@@ -1,18 +1,19 @@
 <?php
-//memulai Session
+// Memulai Session
 session_start();
-//memuat dan menginisialisasi class User
+// Memuat dan menginisialisasi class User
 include 'user.php';
 $user = new User();
+
 if(isset($_POST['daftarSubmit'])){
-	//memeriksa apakah rincian user kosong
-    if(!empty($_POST['nama_awal']) && !empty($_POST['nama_akhir']) && !empty($_POST['email']) && !empty($_POST['telp']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])){
-		//membandingkan password and konfirmasi password
+    // Memeriksa apakah rincian user kosong
+    if(!empty($_POST['nama_awal']) && !empty($_POST['nama_akhir']) && !empty($_POST['email']) && !empty($_POST['telp']) && !empty($_POST['password']) && !empty($_POST['confirm_password']) && !empty($_POST['role'])){
+        // Membandingkan password and konfirmasi password
         if($_POST['password'] !== $_POST['confirm_password']){
             $sesiData['status']['type'] = 'error';
-            $sesiData['status']['msg'] = 'Konfirmasi password harus sama dengan password.'; 
+            $sesiData['status']['msg'] = 'Konfirmasi password harus sama dengan password.';
         }else{
-			//memeriksa apakah user sudah ada di dalam database
+            // Memeriksa apakah user sudah ada di dalam database
             $kondSblmnya['where'] = array('email'=>$_POST['email']);
             $kondSblmnya['return_type'] = 'count';
             $userSblmnya = $user->getRows($kondSblmnya);
@@ -20,16 +21,17 @@ if(isset($_POST['daftarSubmit'])){
                 $sesiData['status']['type'] = 'error';
                 $sesiData['status']['msg'] = 'Email sudah ada, silakan gunakan email yang lain.';
             }else{
-				//memasukkan data user dalam database
+                // Memasukkan data user dalam database
                 $userData = array(
                     'nama_awal' => $_POST['nama_awal'],
                     'nama_akhir' => $_POST['nama_akhir'],
                     'email' => $_POST['email'],
                     'password' => md5($_POST['password']),
-                    'telp' => $_POST['telp']
+                    'telp' => $_POST['telp'],
+                    'role' => $_POST['role'] // Menambahkan peran pengguna
                 );
                 $insert = $user->insert($userData);
-				//Status ditetapkan berdasarkan data yang dimasukkan
+                // Status ditetapkan berdasarkan data yang dimasukkan
                 if($insert){
                     $sesiData['status']['type'] = 'sukses';
                     $sesiData['status']['msg'] = 'Anda telah berhasil didaftarkan.';
@@ -41,17 +43,17 @@ if(isset($_POST['daftarSubmit'])){
         }
     }else{
         $sesiData['status']['type'] = 'error';
-        $sesiData['status']['msg'] = 'Isi semua bidang.'; 
+        $sesiData['status']['msg'] = 'Isi semua bidang.';
     }
-	//menyimpan status pendaftaran ke dalam Session
+    // Menyimpan status pendaftaran ke dalam Session
     $_SESSION['sesiData'] = $sesiData;
     $redirectURL = ($sesiData['status']['type'] == 'sukses')?'login.php':'registrasi.php';
-	//mengalihkan ke halaman index/pendaftaran
+    // Mengalihkan ke halaman index/pendaftaran
     header("Location:".$redirectURL);
 }elseif(isset($_POST['loginSubmit'])){
-    //memeriksa apakah login yang diinput kosong
+    // Memeriksa apakah login yang diinput kosong
     if(!empty($_POST['email']) && !empty($_POST['password'])){
-		//mendapatkan data user dari class user
+        // Mendapatkan data user dari class user
         $kondisi['where'] = array(
             'email' => $_POST['email'],
             'password' => md5($_POST['password']),
@@ -59,11 +61,11 @@ if(isset($_POST['daftarSubmit'])){
         );
         $kondisi['return_type'] = 'single';
         $userData = $user->getRows($kondisi);
-		//Menetapkan data dan status user berdasarkan login
+        // Menetapkan data dan status user berdasarkan login
         if($userData){
             $_SESSION['namauser'] = $userData['nama_awal'];
             if($userData['role']=='admin'){
-                $_SESSION['admin'] = TRUE; 
+                $_SESSION['admin'] = TRUE;
             }else{
                 $_SESSION['user_biasa'] = TRUE;
             }
@@ -75,24 +77,23 @@ if(isset($_POST['daftarSubmit'])){
             header("Location:index.php");
         }else{
             $sesiData['status']['type'] = 'error';
-            $sesiData['status']['msg'] = 'Email atau password salah, silahkan coba lagi.'; 
+            $sesiData['status']['msg'] = 'Email atau password salah, silahkan coba lagi.';
             header("Location:login.php");
         }
     }else{
         $sesiData['status']['type'] = 'error';
-        $sesiData['status']['msg'] = 'Masukkan email and password.'; 
+        $sesiData['status']['msg'] = 'Masukkan email and password.';
         header("Location:login.php");
     }
-	//menyimpan status login ke dalam Session
+    // Menyimpan status login ke dalam Session
     $_SESSION['sesiData'] = $sesiData;
-	//mengalihkan ke halaman home
-    
 }elseif(!empty($_REQUEST['logoutSubmit'])){
-	//menghapus data Session
+    // Menghapus data Session
     unset($_SESSION['sesiData']);
     session_destroy();
     header("Location:index.php");
 }else{
-	//mengalihkan ke halaman home
+    // Mengalihkan ke halaman home
     header("Location:index.php");
 }
+?>
