@@ -129,19 +129,28 @@ $events = $req->fetchAll();
       <section id="services" class="services service-section">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://maps.app.goo.gl/5MMK4SBS75xf6ULG9" target="_blank">
+                  <span class="icon icon-map" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
                     <p>Jl. Raya Candi V No.5D, Doro, Karangwidoro, Kec. Dau, Kabupaten Malang, Jawa Timur 65151</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center">
+                <a href="https://salsawisata.com/candi-badut/" target="_blank">
+                  <span class="icon icon-global" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
-                    <p>Tidak tersedia</p>
+                    <p>Informasi terkait candi badut</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://wa.me/628112939969" target="_blank">
+                <span class="icon icon-phone" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
-                    <p>Tidak tersedia</p>
+                    <p>+628112939969</p>
                   </div>
                 </div>
               </div>
@@ -183,19 +192,28 @@ $events = $req->fetchAll();
       <section id="services" class="services service-section">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://maps.app.goo.gl/o5nR7aTLEyjwcniH6" target="_blank">
+                  <span class="icon icon-map" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
                     <p>Jl. Raya Buduran - Jembatan Layang, Bedrek, Siwalanpanji, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61252</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://museummputantular.com/" target="_blank">
+                  <span class="icon icon-global" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
-                    <p>museummputantular.com</p>
+                    <p>Informasi terkait museum mpu tantular</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://museummputantular.com/kontak-kami/" target="_blank">
+                  <span class="icon icon-phone" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
-                    <p>031-8056688</p>
+                    <p>Narahubung</p>
                   </div>
                 </div>
               </div>
@@ -236,19 +254,26 @@ $events = $req->fetchAll();
     <section id="services" class="services service-section">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://maps.app.goo.gl/i1uM9vaGTMnyAKYL9" target="_blank">
+                  <span class="icon icon-map" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
                     <p>Jl. Pemuda No.39, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="http://www.monkasel-surabaya.com/" target="_blank">
+                  <span class="icon icon-global" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
-                    <p>tourism.surabaya.go.id</p>
+                    <p>Informasi terkait monumen kapal surabaya</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
-                  <div class="services-content">
-                    <p>031-5340444</p>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="services-content">
+                <p><a href="mailto:monumenkapalselamsby@gmail.com">monumenkapalselamsby@gmail.com</a></p>
                   </div>
                 </div>
               </div>
@@ -289,19 +314,27 @@ $events = $req->fetchAll();
     <section id="services" class="services service-section">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://maps.app.goo.gl/CgPv49wdL3g9V1KC9" target="_blank">
+                  <span class="icon icon-map" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
                     <p>Jl. Untung Suropati No.II, Pelem II, Pelem, Kec. Ngawi, Kabupaten Ngawi, Jawa Timur 63211</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://bappelitbang.ngawikab.go.id/elementor-2109/" target="_blank">
+                  <span class="icon icon-global" style="color:#F60"></span>
+                  </a>
                   <div class="services-content">
-                    <p>bappelitbang@ngawikab.go.id</p>
+                    <p>Informasi terkait Benteng Pendem Van Den Bosch</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
-                  <div class="services-content">
-                    <p>(0351) 745956</p>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="services-content">
+                <p><a href="mailto:bappelitbang@ngawikab.go.id">bappelitbang@ngawikab.go.id</a></p>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -316,13 +349,11 @@ $events = $req->fetchAll();
   <div class="footer-top section">
     <div class="container" align="center">
       <div class="row">
-        <a style="padding:20px"; href="#"><i class="fa fa-facebook"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-twitter"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-linkedin"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-google-plus"></i></a>
+        <a style="padding:20px"; href="https://github.com/mulyani07/UAS-PEMWEB"><i class="fa fa-github"></i></a>
+       
         <br>
         <br>
-<p>Copyright © 20123 jogjaku.com All Rights Reserved. Made by Vitto
+<p>Copyright © 2024 destinasijatim.com All Rights Reserved. Made by Kelompok 10
       </div>
     </div>
   </div>
