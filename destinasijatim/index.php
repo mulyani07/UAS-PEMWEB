@@ -261,13 +261,11 @@ $events = $req->fetchAll();
   <div class="footer-top section">
     <div class="container" align="center">
       <div class="row">
-        <a style="padding:20px"; href="#"><i class="fa fa-facebook"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-twitter"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-linkedin"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-google-plus"></i></a>
+        <a style="padding:20px"; href="https://github.com/mulyani07/UAS-PEMWEB"><i class="fa fa-github"></i></a>
+        
         <br>
         <br>
-<p>Copyright © 20123 jogjaku.com All Rights Reserved. Made by Vitto
+<p>Copyright © 2024 destinasijatim.com All Rights Reserved. Made by Kelompok 10
       </div>
     </div>
   </div>
