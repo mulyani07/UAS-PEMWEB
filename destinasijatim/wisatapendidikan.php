@@ -130,19 +130,28 @@ $events = $req->fetchAll();
     <section id="services" class="services service-section">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://maps.app.goo.gl/ANje6ErrbHHzXiRe8https://maps.app.goo.gl/ivFbfQpcd6tio3Xa8" target="_blank">
+                <span class="icon icon-map" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
                     <p>Jl. Raya Prigen No.8, Plembon, Prigen, Kec. Prigen, Pasuruan, Jawa Timur 67157</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://cimorydairyland.com/wisata/farmthemepark-prigen" target="_blank">
+                <span class="icon icon-global" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
-                    <p>cimory.com</p>
+                    <p>Informasi Terkait Cimory Diary Prigen</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://wa.me/6281388938607" target="_blank">
+                <span class="icon icon-phone" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
-                    <p>(021) 5874630</p>
+                    <p>+6281388938607</p>
                   </div>
                 </div>
               </div>
@@ -183,19 +192,28 @@ $events = $req->fetchAll();
     <section id="services" class="services service-section">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://maps.app.goo.gl/rrP7HLBXLbmAfZwU6" target="_blank">
+                <span class="icon icon-map" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
                     <p>Jl. Perkebunan Kalibendo no. 238</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>
-                  <div class="services-content">
-                    <p>desakemiren238@gmail.com</p>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://digitiket.com/v/detail/desa-wisata-osing-kemiren" target="_blank">
+                <span class="icon icon-global" style="color:#F60"></span>
+                </a>
+                <div class="services-content">
+                    <p>Informasi Terkait Desa Adat Kemiren</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://wa.me6281259120023" target="_blank">
+                <span class="icon icon-phone" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
-                    <p>+62 857 4660 9409</p>
+                    <p>+6281259120023</p>
                   </div>
                 </div>
               </div>
@@ -236,19 +254,26 @@ $events = $req->fetchAll();
     <section id="services" class="services service-section">
             <div class="container">
               <div class="row">
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://maps.app.goo.gl/An9Yqq65c9qqyHRA6" target="_blank">
+                <span class="icon icon-map" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
                     <p>Kaliwining, Gebang, Nogosari, Rambipuji, Jember Regency, East Java 68175</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://www.catatannobi.com/2019/07/pusat-penelitian-kopi-dan-kakao-jember" target="_blank">
+                <span class="icon icon-map" style="color:#F60"></span>
+                </a>
                   <div class="services-content">
-                    <p>iccri@iccri.net</p>
+                    <p>Informasi Terkait Pusat Penelitian Kopi dan Kakao</p>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
-                  <div class="services-content">
-                    <p>(62331) 757130, 757132</p>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <span class="icon icon-envelope" style="color:#F60"></span>
+                <div class="services-content">
+                <p><a href="mailto: iccri@iccri.net"> iccri@iccri.net</a></p>
                   </div>
                 </div>
               </div>
@@ -272,13 +297,11 @@ $events = $req->fetchAll();
   <div class="footer-top section">
     <div class="container" align="center">
       <div class="row">
-        <a style="padding:20px"; href="#"><i class="fa fa-facebook"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-twitter"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-linkedin"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-google-plus"></i></a>
+        <a style="padding:20px"; href="https://github.com/mulyani07/UAS-PEMWEB"><i class="fa fa-github"></i></a>
+        
         <br>
         <br>
-<p>Copyright © 20123 jogjaku.com All Rights Reserved. Made by Vitto
+<p>Copyright © 2024 destinasijatim.com All Rights Reserved. Made by Kelompok 10
       </div>
     </div>
   </div>
