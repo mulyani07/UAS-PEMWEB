@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: May 25, 2024 at 04:16 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 28 Bulan Mei 2024 pada 12.41
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `artikel`
+-- Struktur dari tabel `artikel`
 --
 
 CREATE TABLE `artikel` (
@@ -36,7 +36,7 @@ CREATE TABLE `artikel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `artikel`
+-- Dumping data untuk tabel `artikel`
 --
 
 INSERT INTO `artikel` (`id`, `judul`, `keterangan`, `url`, `foto`) VALUES
@@ -50,7 +50,7 @@ INSERT INTO `artikel` (`id`, `judul`, `keterangan`, `url`, `foto`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `events`
+-- Struktur dari tabel `events`
 --
 
 CREATE TABLE `events` (
@@ -65,7 +65,7 @@ CREATE TABLE `events` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeri`
+-- Struktur dari tabel `galeri`
 --
 
 CREATE TABLE `galeri` (
@@ -76,7 +76,7 @@ CREATE TABLE `galeri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `galeri`
+-- Dumping data untuk tabel `galeri`
 --
 
 INSERT INTO `galeri` (`id`, `jenis_wisata`, `nama_tempat`, `foto`) VALUES
@@ -144,7 +144,7 @@ INSERT INTO `galeri` (`id`, `jenis_wisata`, `nama_tempat`, `foto`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `testi`
+-- Struktur dari tabel `testi`
 --
 
 CREATE TABLE `testi` (
@@ -154,7 +154,7 @@ CREATE TABLE `testi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `testi`
+-- Dumping data untuk tabel `testi`
 --
 
 INSERT INTO `testi` (`id`, `nama_user`, `saran`) VALUES
@@ -166,7 +166,7 @@ INSERT INTO `testi` (`id`, `nama_user`, `saran`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -183,7 +183,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id`, `nama_awal`, `nama_akhir`, `email`, `password`, `telp`, `dibuat`, `diubah`, `status`, `role`) VALUES
@@ -192,69 +192,59 @@ INSERT INTO `user` (`id`, `nama_awal`, `nama_akhir`, `email`, `password`, `telp`
 (23, 'Raju', 'Vitto', 'Vitto@jogjaku.com', 'bedce5ae492d1bdc9fb988c4991c2d46', '082362505777', '2017-10-20 16:30:50', '2017-10-20 16:30:50', '1', 'user_biasa'),
 (24, 'Simsi', 'Mi', 'Simsi@jogjaku', '257a63d544be379b968351c1ce07a3b6', '052828589240', '2017-10-23 09:02:43', '2017-10-23 09:02:43', '1', 'user_biasa'),
 (25, 'Syah', 'Kon', 'Syah@jogjaku.com', '418a0cdf69bde721880aa171d2d79d40', '0826425666', '2017-10-23 09:04:07', '2017-10-23 09:04:07', '1', 'user_biasa'),
-(26, 'Rifqi', 'Rahmanda', 'rifqirahmanda2004@gmail.com', '25d55ad283aa400af464c76d713c07ad', '085933100004', '2024-05-21 05:21:52', '2024-05-21 05:21:52', '1', 'user_biasa');
+(26, 'Rifqi', 'Rahmanda', 'rifqirahmanda2004@gmail.com', '25d55ad283aa400af464c76d713c07ad', '085933100004', '2024-05-21 05:21:52', '2024-05-21 05:21:52', '1', 'user_biasa'),
+(27, 'muhammad', 'widad', 'widad123@gmail.com', 'acc9fa32ca4f1b75d24177888f0a36dd', '085815966844', '2024-05-25 14:49:18', '2024-05-25 14:49:18', '1', 'user_biasa'),
+(28, 'admin', 'destinasijatim', 'admin@destinasijatim.com', '21232f297a57a5a743894a0e4a801fc3', '080123456789', '2024-05-26 13:55:48', '2024-05-26 13:55:48', '1', 'admin');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `artikel`
+-- Indeks untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `events`
+-- Indeks untuk tabel `events`
 --
 ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `galeri`
---
-ALTER TABLE `galeri`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `testi`
+-- Indeks untuk tabel `testi`
 --
 ALTER TABLE `testi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `artikel`
+-- AUTO_INCREMENT untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `galeri`
---
-ALTER TABLE `galeri`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
-
---
--- AUTO_INCREMENT for table `testi`
+-- AUTO_INCREMENT untuk tabel `testi`
 --
 ALTER TABLE `testi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
