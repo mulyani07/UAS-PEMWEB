@@ -115,7 +115,7 @@ if(!empty($sesiData['status']['msg'])){
         <!-- Footer -->
         <footer style="margin-bottom: 5rem; margin-top: 2rem;">
                 <div>
-                    <p align="center">Copyright © 2024 destinasijatim.com All Rights Reserved</p>
+                    <p align="center">Copyright © 2024 destinasijatim.com All Rights Reserved. Made by Kelompok 10</p>
                 </div>
         </footer>
     </main>

@@ -134,7 +134,7 @@ if(!empty($sesiData['status']['msg'])){
                 </br>
                 </br>
                 </br>
-                   <p align="center">Copyright © 2024 destinasijatim.com All Rights Reserved</p>
+                   <p align="center">Copyright © 2024 destinasijatim.com All Rights Reserved. Made by Kelompok 10</p>
                 </div>
             </div>
         </footer>

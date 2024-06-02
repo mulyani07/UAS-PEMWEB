@@ -1,4 +1,4 @@
-<?php
+<p?php
 session_start();
 $sesiData = !empty($_SESSION['sesiData']) ? $_SESSION['sesiData'] : '';
 if (!empty($sesiData['status']['msg'])) {
@@ -224,7 +224,7 @@ $events = $req->fetchAll();
           <a style="padding:20px" ; href="#"><i class="fa fa-google-plus"></i></a>
           <br>
           <br>
-          <p>Copyright © 2023 jogjaku.com All Rights Reserved. Made by Vitto
+          <p>Copyright © 2024 destinasijatim.com All Rights Reserved. Made by Kelompok 10 </p>
         </div>
       </div>
     </div>
