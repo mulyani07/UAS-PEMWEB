@@ -21,6 +21,7 @@ if(!empty($sesiData['status']['msg'])){
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/jogjakublack.png">
 
@@ -42,7 +43,7 @@ if(!empty($sesiData['status']['msg'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.php"><img src="images/jogjaku.png" style="width:130px; height: 50px"></a>
+                <a href="index.php"><img src="images/destinasijatim.jpg" style="width:130px; height: 50px"></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -55,11 +56,11 @@ if(!empty($sesiData['status']['msg'])){
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <main>
         </br></br></br>
-        <div class="container, justify" style="margin-top: 30px;">
+        <div  class="flex-center" style="margin-top: 30px;">
         <?php echo !empty($statusPsn)?'<p class="'.$jenisStatusPsn.'">'.$statusPsn.'</p>':''; ?>
-            <div class="col-md-6 col-sm-offset-3">
+            <div class="card-container">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <form id="login-form" method="post" action="akunuser.php" role="form">
@@ -112,14 +113,12 @@ if(!empty($sesiData['status']['msg'])){
         </div>
 
         <!-- Footer -->
-        <footer>
-        <div class="row">
-                <div class="col-lg-12">
-                    <p align="center">Copyright © 2015 jogjaku.com All Rights Reserved. Made by Vitto | Distributed By <a href="https://blogbugabagi.blogspot.com" target="_blank" rel="noopener noreferrer">BlogBugaBagi</a></p>
+        <footer style="margin-bottom: 5rem; margin-top: 2rem;">
+                <div>
+                    <p align="center">Copyright © 2024 destinasijatim.com All Rights Reserved</p>
                 </div>
-            </div>
         </footer>
-    </div>
+    </main>
     <!-- /.container -->
 
     <!-- jQuery -->

@@ -1,0 +1,10 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container {
+    width: clamp(300px, 50%, 500px);
+}

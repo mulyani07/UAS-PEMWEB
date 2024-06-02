@@ -25,6 +25,7 @@ if(!empty($sesiData['status']['msg'])){
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -83,8 +84,8 @@ if(!empty($sesiData['status']['msg'])){
     </br>
     </br>
     
-    <div class="container, justify" style="margin-top: 30px;">
-        <div class="col-sm-4 col-sm-offset-4">
+    <div class="flex-center" style="margin-top: 30px;">
+        <div class="card-container">
             <div class="panel panel-default">
                 <div class="panel-body">
                 <?php
@@ -133,7 +134,7 @@ if(!empty($sesiData['status']['msg'])){
                 </br>
                 </br>
                 </br>
-                   <p align="center">Copyright © 2023 destinasijatim.com All Rights Reserved. Made by Vitto</p>
+                   <p align="center">Copyright © 2024 destinasijatim.com All Rights Reserved</p>
                 </div>
             </div>
         </footer>
