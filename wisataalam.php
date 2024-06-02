@@ -41,6 +41,7 @@ $events = $req->fetchAll();
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="images/destinasijatim.jpg">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -133,12 +134,15 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center"> 
-                <a href="https://maps.app.goo.gl/ivFbfQpcd6tio3Xa8" target="_blank">
                 <span class="icon icon-map" style="color:#F60"></span>
                 </a>
                   <div class="services-content">
                     <p>kawasan hutan petak C Desa Kalianyar, Kecamatan Sempol, Kabupaten Bondowoso.</p>
                   </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+                    <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31603.340147832554!2d114.2527131!3d-8.0588236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd149f2110ae607%3A0x7c04ef029d5e39bc!2sGn.%20Ijen!5e0!3m2!1sid!2sid!4v1717212245905!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
+                  </div>  
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> 
                 <a href="https://www.tiket.bbksdajatim.org/" target="_blank">
@@ -165,7 +169,7 @@ $events = $req->fetchAll();
   <div class="container">
       <div class="row">
             <div class="col-md-6">
-                         <section id="testimonials" class="section testimonials no-padding">
+                <section id="testimonials" class="section testimonials no-padding">
                   <div class="container-fluid">
                     <div class="row no-gutter">
                       <div class="flexslider">
@@ -198,11 +202,14 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center"> 
-                <a href="https://maps.app.goo.gl/mDfvM4g5yKs6WiFA6" target="_blank">
                 <span class="icon icon-map" style="color:#F60"></span>
                 </a>
                   <div class="services-content">
                     <p>Cemoro Lawang, Desa Ngadisari, Kec. Sukapura, Kabupaten Probolinggo , Jawa Timur.</p>
+                  </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+                    <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.18004244916!2d112.95301219999999!3d-7.94249345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1717215707834!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> 
@@ -263,11 +270,13 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center"> 
-                <a href="https://maps.app.goo.gl/LfR6xDizedXmGVjm6" target="_blank">
                 <span class="icon icon-map" style="color:#F60"></span>
                 </a>
                   <div class="services-content">
                     <p>Desa Lolejer, Kecamatan Wuluhan, Jember, Jawa Timur.</p>
+                  </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+?                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7893.401791346161!2d113.5559703!3d-8.4310054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd682a6a4b5cd8d%3A0xb9c242f3a09e2d2e!2sPantai%20Papuma!5e0!3m2!1sid!2sid!4v1717214988865!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center">
@@ -328,11 +337,14 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center">
-                  <a href="https://maps.app.goo.gl/yyRpgikUn5fXwxZV9" target="_blank">
                   <span class="icon icon-map" style="color:#F60"></span>
                   </a>
                   <div class="services-content">
                     <p>Area Hutan/Kebun, Sumberwaru, Kec. Banyuputih, Kabupaten Situbondo, Jawa Timur</p>
+                  </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+                    <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.61587116701!2d114.3875!3d-7.8304167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1249454d7c085%3A0x67067c7ed3eced4b!2sTaman%20Nasional%20Baluran!5e0!3m2!1sid!2sid!4v1717215864806!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> 
@@ -354,6 +366,14 @@ $events = $req->fetchAll();
             </div>
       </section>
   </div>
+  <script>
+    $(document).ready(function(){
+      $(".icon").click(function(){
+        $(".map").slideToggle("slow", function() {
+        });
+      });
+    });
+  </script>
 </section>
 <!-- services section --> 
 <!-- work section -->
@@ -384,6 +404,7 @@ $events = $req->fetchAll();
   
 <!-- Footer section --> 
 <!-- JS FILES --> 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.flexslider-min.js"></script> 

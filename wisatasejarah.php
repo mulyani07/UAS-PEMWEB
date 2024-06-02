@@ -41,6 +41,7 @@ $events = $req->fetchAll();
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="images/destinasijatim.jpg">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -130,11 +131,14 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center"> 
-                <a href="https://maps.app.goo.gl/5MMK4SBS75xf6ULG9" target="_blank">
                   <span class="icon icon-map" style="color:#F60"></span>
                   </a>
                   <div class="services-content">
                     <p>Jl. Raya Candi V No.5D, Doro, Karangwidoro, Kec. Dau, Kabupaten Malang, Jawa Timur 65151</p>
+                  </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+                    <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3978178277544!2d112.59860809999999!3d-7.957776099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78826723d1a95d%3A0x95fdf34c20fb4d51!2sCandi%20Badut!5e0!3m2!1sid!2sid!4v1717216744527!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center">
@@ -193,11 +197,14 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center"> 
-                <a href="https://maps.app.goo.gl/o5nR7aTLEyjwcniH6" target="_blank">
                   <span class="icon icon-map" style="color:#F60"></span>
                   </a>
                   <div class="services-content">
                     <p>Jl. Raya Buduran - Jembatan Layang, Bedrek, Siwalanpanji, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61252</p>
+                  </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+                    <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.2851918350234!2d112.720328!3d-7.433661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f963d2d4fb4d%3A0xfd521173211bad9f!2sMuseum%20Mpu%20Tantular!5e0!3m2!1sid!2sid!4v1717217486900!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> 
@@ -255,11 +262,14 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center"> 
-                <a href="https://maps.app.goo.gl/i1uM9vaGTMnyAKYL9" target="_blank">
                   <span class="icon icon-map" style="color:#F60"></span>
                   </a>
                   <div class="services-content">
                     <p>Jl. Pemuda No.39, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271</p>
+                  </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+                    <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.782770796426!2d112.7502803!3d-7.265544699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9628df520e5%3A0x577443720136fb0b!2sMonumen%20Kapal%20Selam%20Surabaya!5e0!3m2!1sid!2sid!4v1717217536230!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> 
@@ -315,11 +325,14 @@ $events = $req->fetchAll();
             <div class="container">
               <div class="row">
                 <div class="col-md-4 col-sm-6 services text-center"> 
-                <a href="https://maps.app.goo.gl/CgPv49wdL3g9V1KC9" target="_blank">
                   <span class="icon icon-map" style="color:#F60"></span>
                   </a>
                   <div class="services-content">
                     <p>Jl. Untung Suropati No.II, Pelem II, Pelem, Kec. Ngawi, Kabupaten Ngawi, Jawa Timur 63211</p>
+                  </div>
+                  <div class="map-container" style="text-align: center; margin-top: 10px;">
+                    <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6753322433024!2d111.454697!3d-7.390230700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79e7944c12cf99%3A0x2a7a16cf6156d5a5!2sBenteng%20Pendem%20Van%20Den%20Bosch!5e0!3m2!1sid!2sid!4v1717217565841!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 services text-center"> 
@@ -341,6 +354,14 @@ $events = $req->fetchAll();
             </div>
       </section>
   </div>
+  <script>
+    $(document).ready(function(){
+      $(".icon").click(function(){
+        $(".map").slideToggle("slow", function() {
+        });
+      });
+    });
+  </script>
 </section>
 <!-- services section --> 
 
