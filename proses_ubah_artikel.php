@@ -14,7 +14,7 @@ if(isset($_POST['ubah_foto'])){ // Jika user menceklis checkbox yang ada di form
   $tmp = $_FILES['foto']['tmp_name'];
 
   // Rename nama fotonya dengan menambahkan tanggal dan jam upload
-  $fotobaru = date('dmYHis').$foto;
+  $fotobaru = date('dmYHis')."_".$foto;
   
   // Set path folder tempat menyimpan fotonya
   $path = "images/foto/".$fotobaru;

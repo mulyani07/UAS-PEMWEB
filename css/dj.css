@@ -92,7 +92,7 @@ ul li {
 	list-style: none;
 }
 .section {
-	padding: 100px 0;
+	padding: 3em 0;
 }
 .no-padding {
 	padding: 0;
@@ -111,7 +111,6 @@ ul li {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	
 }
 #header .header-content {
 	margin: 0 auto;
@@ -364,7 +363,7 @@ ul li {
 	 Serives
 -------------------------------------------------------------------------------*/
 .service-section {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 .services {
 	margin-bottom: 50px;

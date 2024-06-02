@@ -92,7 +92,7 @@ ul li {
 	list-style: none;
 }
 .section {
-	padding: 100px 0;
+	padding: 3em 0;
 }
 .no-padding {
 	padding: 0;
@@ -111,6 +111,7 @@ ul li {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
+	background-color: black;
 }
 #header .header-content {
 	margin: 0 auto;
@@ -124,19 +125,19 @@ ul li {
 }
 #header .logo {
 	float: left;
-	font-size:24px;
+	font-size: 2.4rem;
 	font-weight:700;
-	color:#fff;
+	color:rgb(255, 255, 255);
 	text-decoration:none;
 	text-transform:uppercase;
 	letter-spacing:7px;
 }
 #header.fixed {
-	background-color: rgb(190, 159, 75);
+	background-color: rgb(0, 0, 0);
 	opacity:0.8;
 }
 #header.fixed a {
-	color: #000;
+	color: #ffffff;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
@@ -346,6 +347,11 @@ ul li {
 /* ==========================================================================
 	$intro
 ========================================================================== */
+main {
+	margin-top: 12rem;
+	/* background-color: black; */
+}
+
 .intro {
 	background-color: #000;
 }
@@ -362,7 +368,7 @@ ul li {
 	 Serives
 -------------------------------------------------------------------------------*/
 .service-section {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 .services {
 	margin-bottom: 50px;

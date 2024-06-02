@@ -8,8 +8,9 @@ $query = "SELECT * FROM artikel WHERE id='".$id."'";
 $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
 $data = mysqli_fetch_array($sql); // Ambil data dari hasil eksekusi $sql
 // Cek apakah file fotonya ada di folder images
-if(is_file("images/foto".$data['foto'])) // Jika foto ada
+if(is_file("images/foto".$data['foto'])) { // Jika foto ada
   unlink("images/foto".$data['foto']); // Hapus foto yang telah diupload dari folder images
+}
 // Query untuk menghapus data testi berdasarkan id yang dikirim
 $query2 = "DELETE FROM artikel WHERE id='".$id."'";
 $sql2 = mysqli_query($connect, $query2); // Eksekusi/Jalankan query dari variabel $query
