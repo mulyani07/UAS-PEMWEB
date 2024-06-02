@@ -347,11 +347,6 @@ ul li {
 /* ==========================================================================
 	$intro
 ========================================================================== */
-main {
-	margin-top: 12rem;
-	/* background-color: black; */
-}
-
 .intro {
 	background-color: #000;
 }
@@ -671,4 +666,19 @@ padding:15px 30px 15px 30px;
 	color: #e84545;
 	font-size: 11px;
 	margin: 0 2px;
+}
+
+/* Additional */
+.title-intro {
+	color: #ff5722;
+	font-size: 6rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main {
+	padding-top: 12rem;
+	min-height: 77.5vh;
+	/* min-height: 100dvh; */
 }

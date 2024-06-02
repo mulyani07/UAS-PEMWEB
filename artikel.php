@@ -85,7 +85,7 @@ $events = $req->fetchAll();
     <section id="intro" class="title-container">
       <div class="container">
         <div class="col-md-8 col-md-offset-2 text-center">
-          <h1>ARTIKEL</h1>
+          <h1 class="title-intro">ARTIKEL</h1>
           <?php
           if (isset($_SESSION['admin'])) {
           ?>
