@@ -130,174 +130,637 @@ $events = $req->fetchAll();
               <div class="container">
                 <div class="row">
                   <div class="col-md-4 col-sm-6 services text-center">
-                  <span class="icon icon-map" style="color:#F60"></span>
+                  <span class="icon icon-map" style="color:#c46b37"></span>
                   </a>
                     <div class="services-content">
-                      <p>Jl. Raya Prigen No.8, Plembon, Prigen, Kec. Prigen, Pasuruan, Jawa Timur 67157</p>
-                    </div>
-                    <div class="map-container" style="text-align: center; margin-top: 10px;">
-                      <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
-                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.027704605798!2d112.63782627495713!3d-7.680170176031174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d7149fab38d5%3A0x4e951b17a75a3175!2sDairyland%20Farm%20Theme%20Park%20Prigen!5e0!3m2!1sid!2sid!4v1717217640829!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
-                    </div>
+                      <p>Jl. Raya Prigen No.8, Plembon, Prigen</p>
+                      <button onclick="toggleMapPrigen()">View Map</button>
+                    <iframe class="mapprigen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.027704605798!2d112.63782627495713!3d-7.680170176031174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d7149fab38d5%3A0x4e951b17a75a3175!2sDairyland%20Farm%20Theme%20Park%20Prigen!5e0!3m2!1sid!2sid!4v1717217640829!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
+                    <div id="mapprigen" style="display: none;">
                   </div>
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <a href="https://cimorydairyland.com/wisata/farmthemepark-prigen" target="_blank">
-                  <span class="icon icon-global" style="color:#F60"></span>
-                  </a>
-                    <div class="services-content">
-                      <p>Informasi Terkait Cimory Diary Prigen</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <a href="https://wa.me/6281388938607" target="_blank">
-                  <span class="icon icon-phone" style="color:#F60"></span>
-                  </a>
-                    <div class="services-content">
-                      <p>+6281388938607</p>
-                    </div>
-                  </div>
+                  
+                  </div>  
                 </div>
-              </div>
-        </section>
-    </div>
-  </section>
-  <section id="services" class="services service-section">
-    <div class="container">
-        <div class="row">
-              <div class="col-md-6">
-                           <section id="testimonials" class="section testimonials no-padding">
-                    <div class="container-fluid">
-                      <div class="row no-gutter">
-                        <div class="flexslider">
-                        <ul class="slides">
-                        <li>
-                            <img src="images/foto/pendidikan/b1_1.jpg" style="height: 100%">
-                        </li>
-                        <li>
-                            <img src="images/foto/pendidikan/b2_2.jpg" style="height: 100%">
-                        </li>
-                        <li>
-                            <img src="images/foto/pendidikan/b1_1.jpg" style="height: 100%">
-                        </li>
-                        </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-              </div>
-              <div class="col-md-6">
-                  <h2>Desa Adat Kemiren</h2>
-                  <p>Desa Adat Kemiren merupakan sebuah desa adat yang terletak di Kecamatan Glagah, Banyuwangi, Jawa Timur. Desa ini dikenal karena mempertahankan keaslian budaya Osing, salah satu suku asli Banyuwangi. Kemiren adalah destinasi yang menarik bagi wisatawan yang ingin menelusuri keunikan budaya lokal. Di sini, pengunjung dapat melihat rumah tradisional Osing, mempelajari kegiatan sehari-hari masyarakat, serta mencicipi kuliner khas seperti jajanan tradisional. Desa Adat Kemiren juga sering menggelar berbagai acara budaya dan kesenian untuk memperkenalkan kekayaan budaya lokal kepada pengunjung.</p>
-              </div>
-          </div>
-      </div>
-      <section id="services" class="services service-section">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <span class="icon icon-map" style="color:#F60"></span>
-                  </a>
-                    <div class="services-content">
-                      <p>Jl. Perkebunan Kalibendo no. 238</p>
-                    </div>
-                    <div class="map-container" style="text-align: center; margin-top: 10px;">
-                      <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
-                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.918562286493!2d114.3094792!3d-8.2048011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14ff392960cdb%3A0xdc2aee3b56f0e34b!2sKawasan%20Desa%20Wisata!5e0!3m2!1sid!2sid!4v1717217758072!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <a href="https://digitiket.com/v/detail/desa-wisata-osing-kemiren" target="_blank">
-                  <span class="icon icon-global" style="color:#F60"></span>
-                  </a>
-                  <div class="services-content">
-                      <p>Informasi Terkait Desa Adat Kemiren</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <a href="https://wa.me6281259120023" target="_blank">
-                  <span class="icon icon-phone" style="color:#F60"></span>
-                  </a>
-                    <div class="services-content">
-                      <p>+6281259120023</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-    </div>
-  </section>
-  <section id="services" class="services service-section">
-    <div class="container">
-        <div class="row">
-              <div class="col-md-6">
-                           <section id="testimonials" class="section testimonials no-padding">
-                    <div class="container-fluid">
-                      <div class="row no-gutter">
-                        <div class="flexslider">
-                        <ul class="slides">
-                        <li>
-                            <img src="images/foto/pendidikan/c1_1.jpg" style="height: 100%">
-                        </li>
-                        <li>
-                            <img src="images/foto/pendidikan/c2_2.jpg" style="height: 100%">
-                        </li>
-                        <li>
-                            <img src="images/foto/pendidikan/c1_1.jpg" style="height: 100%">
-                        </li>
-                        </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-              </div>
-              <div class="col-md-6">
-                  <h2>Pusat Penelitian Kopi dan Kakao</h2>
-                  <p>Pusat Penelitian Kopi dan Kakao Jember merupakan sebuah lembaga riset yang berfokus pada pengembangan dan inovasi dalam bidang kopi dan kakao. Terletak di Jember, Jawa Timur, pusat ini menjadi pusat studi dan eksperimen untuk meningkatkan kualitas dan produktivitas kopi serta kakao. Dengan berbagai kegiatan riset dan pengembangan, pusat ini bertujuan untuk mendukung pertumbuhan industri kopi dan kakao di daerah tersebut serta memberikan kontribusi terhadap pengembangan petani lokal dan ekonomi regional.</p>
-              </div>
-          </div>
-      </div>
-      <section id="services" class="services service-section">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <span class="icon icon-map" style="color:#F60"></span>
-                  </a>
-                    <div class="services-content">
-                      <p>Kaliwining, Gebang, Nogosari, Rambipuji, Jember Regency, East Java 68175</p>
-                    </div>
-                    <div class="map-container" style="text-align: center; margin-top: 10px;">
-                      <!-- <button class="show btn btn-info" style="margin-bottom: 10px;">Map</button> -->
-                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.918562286493!2d114.3094792!3d-8.2048011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14ff392960cdb%3A0xdc2aee3b56f0e34b!2sKawasan%20Desa%20Wisata!5e0!3m2!1sid!2sid!4v1717217758072!5m2!1sid!2sidhttps://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63175.254218111004!2d113.53626!3d-8.257587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd69064ee50934d%3A0x64d6cf6333849798!2sPusat%20Penelitian%20Kopi%20dan%20Kakao%20Indonesia!5e0!3m2!1sid!2sid!4v1717217799401!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <a href="https://www.catatannobi.com/2019/07/pusat-penelitian-kopi-dan-kakao-jember" target="_blank">
-                  <span class="icon icon-map" style="color:#F60"></span>
-                  </a>
-                    <div class="services-content">
-                      <p>Informasi Terkait Pusat Penelitian Kopi dan Kakao</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 services text-center">
-                  <span class="icon icon-envelope" style="color:#F60"></span>
-                  <div class="services-content">
-                  <p><a href="mailto: iccri@iccri.net"> iccri@iccri.net</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-    </div>
-    <script>
-      $(document).ready(function(){
-        $(".icon").click(function(){
-          $(".map").slideToggle("slow", function() {
-          });
-        });
-      });
+
+                <script>
+        function toggleMapPrigen() {
+            var mapFrame = document.querySelector('.mapprigen');
+            if (mapFrame.style.display === "none" || mapFrame.style.display === "") {
+                mapFrame.style.display = "block";
+            } else {
+                mapFrame.style.display = "none";
+            }
+        }
     </script>
-  </section>
-</main>
+
+
+
+    <style>
+  .services-content button {
+    background-color: #9e4817;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .services-content button:hover {
+    background-color: #e55500;
+  }
+
+  #more-details-prigen {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  .services-content ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+</style>
+                 
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://cimorydairyland.com/wisata/farmthemepark-prigen" target="_blank">
+                <span class="icon icon-global" style="color:#c46b37"></span>
+                </a>
+                  <div class="services-content">
+                    <p>Informasi Terkait Cimory Diary Prigen</p>
+                    <button onclick="toggleDetailsPrigen()" style="background-color: #9e4817; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-top: 10px; font-size: 16px;">View More</button>
+    <div id="more-details-prigen" style="display: none;">
+      <h3>Rincian Harga Tiket</h3>
+      <table border="1" style="width:100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hari Kerja</td>
+            <td>Rp 20.000/orang</td>
+          </tr>
+          <tr>
+            <td>Wisatawan Mancanegara</td>
+            <td>Rp 30.000/orang</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Harga Parkir Kendaraan</h3>
+      <table border="1" style="width:100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Jenis Kendaraan</th>
+            <th>Harga Parkir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor</td>
+            <td>Rp 4.000</td>
+          </tr>
+          <tr>
+            <td>Mobil</td>
+            <td>Rp 5.000</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Transportasi yang Digunakan</h3>
+      <ul>
+              <li><strong>Kendaraan Pribadi:</strong> Anda dapat menggunakan kendaraan pribadi, baik mobil maupun motor, untuk mencapai Cimory Prigen. Rute yang umum adalah dari Surabaya menuju Pandaan, lalu mengikuti petunjuk jalan menuju Prigen.</li>
+              <li><strong>Transportasi Umum:</strong> Anda dapat menggunakan bus dari Surabaya atau Malang menuju Terminal Pandaan. Dari Terminal Pandaan, Anda bisa melanjutkan perjalanan menggunakan ojek atau taksi menuju Cimory Prigen.</li>
+              <li><strong>Jasa Tur:</strong> Terdapat banyak penyedia jasa tur yang menawarkan paket perjalanan ke Cimory Prigen yang sudah mencakup transportasi dan pemandu wisata.</li>
+            </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDetailsPrigen() {
+    var details = document.getElementById('more-details-prigen');
+    if (details.style.display === 'none' || details.style.display === '') {
+      details.style.display = 'block';
+    } else {
+      details.style.display = 'none';
+    }
+  }
+</script>
+<style>
+  .services-content button {
+    background-color: #9e4817;;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .services-content button:hover {
+    background-color: #e55500;
+  }
+
+  #more-details-bromo {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  .services-content ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+  
+</style>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://wa.me/6281388938607" target="_blank">
+                <span class="icon icon-phone" style="color:#c46b37"></span>
+                </a>
+                  <div class="services-content">
+                    <p>+6281388938607</p>
+                    <button onclick="window.location.href='https://wa.me/6281388938607';" style="background-color: #9e4817; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-top: 10px; font-size: 16px;">Contact</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+  </div>
+</section>
+<section id="services" class="services service-section">
+  <div class="container">
+      <div class="row">
+            <div class="col-md-6">
+                         <section id="testimonials" class="section testimonials no-padding">
+                  <div class="container-fluid">
+                    <div class="row no-gutter">
+                      <div class="flexslider">
+                      <ul class="slides">
+                      <li>
+                          <img src="images/foto/pendidikan/b1_1.jpg" style="height: 100%">
+                      </li>
+                      <li>
+                          <img src="images/foto/pendidikan/b2_2.jpg" style="height: 100%">
+                      </li>
+                      <li>
+                          <img src="images/foto/pendidikan/b1_1.jpg" style="height: 100%">
+                      </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <h2>Desa Adat Kemiren</h2>
+                <p>Desa Adat Kemiren merupakan sebuah desa adat yang terletak di Kecamatan Glagah, Banyuwangi, Jawa Timur. Desa ini dikenal karena mempertahankan keaslian budaya Osing, salah satu suku asli Banyuwangi. Kemiren adalah destinasi yang menarik bagi wisatawan yang ingin menelusuri keunikan budaya lokal. Di sini, pengunjung dapat melihat rumah tradisional Osing, mempelajari kegiatan sehari-hari masyarakat, serta mencicipi kuliner khas seperti jajanan tradisional. Desa Adat Kemiren juga sering menggelar berbagai acara budaya dan kesenian untuk memperkenalkan kekayaan budaya lokal kepada pengunjung.</p>
+            </div>
+        </div>
+    </div>
+    <section id="services" class="services service-section">
+            <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 services text-center"> 
+                <span class="icon icon-map" style="color:#c46b37"></span>
+                </a>
+                  <div class="services-content">
+                    <p>Kecamatan Glagah, Banyuwangi</p>
+                    <button onclick="toggleMapKemiren()">View Map</button>
+                    <iframe class="mapkemiren" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.918562286493!2d114.3094792!3d-8.2048011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14ff392960cdb%3A0xdc2aee3b56f0e34b!2sKawasan%20Desa%20Wisata!5e0!3m2!1sid!2sid!4v1717217758072!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
+                    <div id="mapkemiren" style="display: none;">
+                  </div>
+                  
+                  </div>  
+                </div>
+
+                <script>
+        function toggleMapKemiren() {
+            var mapFrame = document.querySelector('.mapkemiren');
+            if (mapFrame.style.display === "none" || mapFrame.style.display === "") {
+                mapFrame.style.display = "block";
+            } else {
+                mapFrame.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <style>
+  .services-content button {
+    background-color: #9e4817;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .services-content button:hover {
+    background-color: #e55500;
+  }
+
+  #more-details-kemiren {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  .services-content ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+  
+</style>
+                  
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://digitiket.com/v/detail/desa-wisata-osing-kemiren" target="_blank">
+                <span class="icon icon-global" style="color:#9e4817"></span>
+                </a>
+                <div class="services-content">
+                    <p>Informasi Terkait Desa Adat Kemiren</p>
+                    <button onclick="toggleDetailsKemiren()">View More</button>
+    <div id="more-details-kemiren" style="display: none;">
+      <h3>Rincian Harga Tiket</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tiket Masuk</td>
+            <td>Rp 5.000/orang</td>
+          </tr>
+          <tr>
+            <td>Penginapan</td>
+            <td>Rp 165.000/malam</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Harga Parkir Kendaraan</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Jenis Kendaraan</th>
+            <th>Harga Parkir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor</td>
+            <td>Rp 2.000</td>
+          </tr>
+          <tr>
+            <td>Mobil</td>
+            <td>Rp 5.000</td>
+          </tr>
+          <tr>
+            <td>Bus</td>
+            <td>Rp 10.000</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Transportasi yang Digunakan</h3>
+      <ul>
+      <li><strong>Kendaraan Pribadi:</strong> Anda dapat menggunakan kendaraan pribadi, baik mobil maupun motor, untuk mencapai Desa Kemiren. Rute yang umum adalah dari Banyuwangi menuju Kecamatan Glagah, lalu mengikuti petunjuk jalan menuju Desa Kemiren.</li>
+              <li><strong>Transportasi Umum:</strong> Anda dapat menggunakan bus atau kereta api menuju Banyuwangi. Dari stasiun atau terminal, Anda bisa melanjutkan perjalanan menggunakan ojek atau taksi menuju Desa Kemiren.</li>
+              <li><strong>Jasa Tur:</strong> Terdapat banyak penyedia jasa tur yang menawarkan paket perjalanan ke Desa Kemiren yang sudah mencakup transportasi dan pemandu wisata.</li>
+            </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDetailsKemiren() {
+    var details = document.getElementById('more-details-kemiren');
+    if (details.style.display === 'none' || details.style.display === '') {
+      details.style.display = 'block';
+    } else {
+      details.style.display = 'none';
+    }
+  }
+</script>
+
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://wa.me6281259120023" target="_blank">
+                <span class="icon icon-phone" style="color:#9e4817"></span>
+                </a>
+                  <div class="services-content">
+                    <p>+6281259120023</p>
+                    <button onclick="window.location.href='https://wa.me/6281259120023';" style="background-color: #9e4817; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-top: 10px; font-size: 16px;">Contact</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+  </div>
+</section>
+<section id="services" class="services service-section">
+  <div class="container">
+      <div class="row">
+            <div class="col-md-6">
+                         <section id="testimonials" class="section testimonials no-padding">
+                  <div class="container-fluid">
+                    <div class="row no-gutter">
+                      <div class="flexslider">
+                      <ul class="slides">
+                      <li>
+                          <img src="images/foto/pendidikan/c1_1.jpg" style="height: 100%">
+                      </li>
+                      <li>
+                          <img src="images/foto/pendidikan/c2_2.jpg" style="height: 100%">
+                      </li>
+                      <li>
+                          <img src="images/foto/pendidikan/c1_1.jpg" style="height: 100%">
+                      </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <h2>Pusat Penelitian Kopi dan Kakao</h2>
+                <p>Pusat Penelitian Kopi dan Kakao Jember merupakan sebuah lembaga riset yang berfokus pada pengembangan dan inovasi dalam bidang kopi dan kakao. Terletak di Jember, Jawa Timur, pusat ini menjadi pusat studi dan eksperimen untuk meningkatkan kualitas dan produktivitas kopi serta kakao. Dengan berbagai kegiatan riset dan pengembangan, pusat ini bertujuan untuk mendukung pertumbuhan industri kopi dan kakao di daerah tersebut serta memberikan kontribusi terhadap pengembangan petani lokal dan ekonomi regional.</p>
+            </div>
+        </div>
+    </div>
+    <section id="services" class="services service-section">
+            <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 services text-center"> 
+                <span class="icon icon-map" style="color:#c46b37"></span>
+                </a>
+                  <div class="services-content">
+                    <p>Jl. PB. Sudirman 90, Jember</p>
+                    <button onclick="toggleMapKakao()">View Map</button>
+                    <iframe class="mapkakao" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15795.918562286493!2d114.3094792!3d-8.2048011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14ff392960cdb%3A0xdc2aee3b56f0e34b!2sKawasan%20Desa%20Wisata!5e0!3m2!1sid!2sid!4v1717217758072!5m2!1sid!2sidhttps://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63175.254218111004!2d113.53626!3d-8.257587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd69064ee50934d%3A0x64d6cf6333849798!2sPusat%20Penelitian%20Kopi%20dan%20Kakao%20Indonesia!5e0!3m2!1sid!2sid!4v1717217799401!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0; display:none;" allowfullscreen></iframe>
+                    <div id="mapkakao" style="display: none;">
+                  </div>
+                  </div>  
+                
+
+                <script>
+        function toggleMapKakao() {
+            var mapFrame = document.querySelector('.mapkakao');
+            if (mapFrame.style.display === "none" || mapFrame.style.display === "") {
+                mapFrame.style.display = "block";
+            } else {
+                mapFrame.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <style>
+  .services-content button {
+    background-color: #9e4817;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .services-content button:hover {
+    background-color: #e55500;
+  }
+
+  #more-details-kakao {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  .services-content ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+</style>
+                
+                </div>
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <a href="https://www.catatannobi.com/2019/07/pusat-penelitian-kopi-dan-kakao-jember" target="_blank">
+                <span class="icon icon-global" style="color:#c46b37"></span>
+                </a>
+                  <div class="services-content">
+                    <p>Informasi Terkait Pusat Penelitian Kopi dan Kakao</p>
+                    <button onclick="toggleDetailsKakao()">View More</button>
+    <div id="more-details-kakao" style="display: none;">
+      <h3>Rincian Harga Tiket</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Kategori</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tiket Masuk</td>
+            <td>Rp 3.000/orang</td>
+          </tr>
+          <tr>
+            <td>Jelajah Pusat Penelitian</td>
+            <td>Rp 1.000/orang</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Harga Parkir Kendaraan</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Jenis Kendaraan</th>
+            <th>Harga Parkir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor</td>
+            <td>Rp 2.000</td>
+          </tr>
+          <tr>
+            <td>Mobil</td>
+            <td>Rp 5.000</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Transportasi yang Digunakan</h3>
+      <ul>
+              <li><strong>Kendaraan Pribadi:</strong> Anda dapat menggunakan kendaraan pribadi, baik mobil maupun motor, untuk mencapai Pusat Penelitian Kopi dan Kakao di Jember. Rute yang umum adalah dari Surabaya atau Banyuwangi menuju Jember, lalu mengikuti petunjuk jalan menuju lokasi penelitian.</li>
+              <li><strong>Transportasi Umum:</strong> Anda dapat menggunakan bus atau kereta api menuju Jember. Dari stasiun atau terminal, Anda bisa melanjutkan perjalanan menggunakan ojek atau taksi menuju Pusat Penelitian Kopi dan Kakao.</li>
+              <li><strong>Jasa Tur:</strong> Terdapat banyak penyedia jasa tur yang menawarkan paket perjalanan ke Pusat Penelitian Kopi dan Kakao yang sudah mencakup transportasi dan pemandu wisata.</li>
+            </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDetailsKakao() {
+    var details = document.getElementById('more-details-kakao');
+    if (details.style.display === 'none' || details.style.display === '') {
+      details.style.display = 'block';
+    } else {
+      details.style.display = 'none';
+    }
+  }
+</script>
+
+<style>
+  .services-content button {
+    background-color: #9e4817;;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .services-content button:hover {
+    background-color: #e55500;
+  }
+
+  #more-details-papuma {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  .services-content ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+</style>
+
+                <div class="col-md-4 col-sm-6 services text-center"> 
+                <span class="icon icon-envelope" style="color:#c46b37"></span>
+                <div class="services-content">
+                <p><a href="mailto: iccri@iccri.net"> iccri@iccri.net</a></p>
+                <button onclick="window.location.href='mailto:iccri@iccri.net';" style="background-color: #9e4817; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-top: 10px; font-size: 16px;">Contact</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+  </div>
+ 
+
+  
+</section>
 <!-- services section --> 
 <!-- work section -->
 <!-- overlay --> 
