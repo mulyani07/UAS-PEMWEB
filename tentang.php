@@ -106,25 +106,29 @@ $events = $req->fetchAll();
     <section id="services" class="services service-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map-pin" style="color:#be9f4b"></span>
+          <a href="https://maps.app.goo.gl/e8QuUSRyCSg1Pa8b7">
+          <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-map-pin" style="color:#F60"></span>
+          </a>
             <div class="services-content">
               <h5>OUR OFFICE LOCATION</h5>
-              <p>HPCF+4FC, Jl. Langgar, Sawahan, Panggung, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61252</p>
+              <p>Fakultas Ilmu Komputer UPN "Veteran" Jawa Timur</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#be9f4b"></span>
+          <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=contactdestinasijatim@gmail.com">
+          <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-envelope" style="color:#F60"></span>            
+          </a>
             <div class="services-content">
               <h5>EMAIL</h5>
-              <p>contact@destinasijatim.com</p>
+              <p>contactdestinasijatim@gmail.com</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#be9f4b"></span>
+          <div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-phone" style="color:#F60"></span>
             <div class="services-content">
               <h5>PHONE NUMBER</h5>
               <p>(031)683427159</p>
             </div>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15831.290416852358!2d112.72046885541994!3d-7.261020199999977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f95df0933beb%3A0x5d51891bfa1d8e8c!2sPakuwon%20Tower!5e0!3m2!1sid!2sid!4v1716128647498!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.1795615344404!2d112.7857497747345!3d-7.33372119267469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb792f87d495%3A0xaae1e1cbcc3e2778!2sFakultas%20Ilmu%20Komputer%20UPN%20%22Veteran%22%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1717579556238!5m2!1sid!2sid" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
