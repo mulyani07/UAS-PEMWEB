@@ -80,6 +80,22 @@ $events = $req->fetchAll();
     </section>
     <!-- Show Testimonial -->
     <!-- Show Testimonial -->
+    <?php
+    function generateStarRating($rating) {
+      $stars = '';
+        for ($i = 1; $i <= 5; $i++) {
+          if ($i <= $rating) {
+            // Menggunakan simbol bintang (★) Unicode
+            $stars .= '★';
+          } else {
+            // Menggunakan simbol bintang kosong (☆) Unicode
+            $stars .= '☆';
+          }
+        }
+        return $stars;
+}
+?>
+
 <section id="teams" class="section teams">
   <div class="container">
     <div class="row">
@@ -100,7 +116,7 @@ $events = $req->fetchAll();
             </div>
             <div class="panel-body">
               <p><?php echo $data['saran']; ?></p>
-              <p>Rating: <?php echo $data['rating']; ?>/5</p>
+              <p>Rating: <?php echo generateStarRating($data['rating']); ?></p>
             </div>
           </div>
         </div>
