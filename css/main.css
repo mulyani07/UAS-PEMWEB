@@ -310,7 +310,7 @@ ul li {
 .panel-testimonial {
 	margin-bottom: 20px;
 }
-  .table-testimonial {
+.table-testimonial {
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 30px;
@@ -322,7 +322,6 @@ ul li {
 }
 .panel-body {
 	text-align: center;
-	vertical-align: middle;
 }
 /* ------------------------------------------------------------------------------
 	Banner
