@@ -10,28 +10,18 @@ if (!empty($sesiData['status']['msg'])) {
 <?php
 require_once('bdd.php');
 
-
-$sql = "SELECT id, title, keterangan, start, end, color FROM events ";
-
+$sql = "SELECT id, title, keterangan, start, end, color FROM events";
 $req = $bdd->prepare($sql);
 $req->execute();
-
 $events = $req->fetchAll();
-
 ?>
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
-<!--<![endif]-->
-
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JOGJAKU</title>
+  <title>Destinasi Jatim</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -46,22 +36,16 @@ $events = $req->fetchAll();
 <body>
   <!-- header section -->
   <header id="header" class="navbar-fixed-top">
-    <div class="header-content clearfix"> <a class="logo" href="index.php">JOGJAKU</a>
+    <div class="header-content clearfix"> <a class="logo" href="index.php">Destinasi Jatim</a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
           <li><a href="index.php">Beranda</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Wisata <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li>
-                <a style="color:grey" href="wisataalam.php">Wisata Alam</a>
-              </li>
-              <li>
-                <a style="color:grey" href="wisatasejarah.php">Wisata Sejarah</a>
-              </li>
-              <li>
-                <a style="color:grey" href="wisatapendidikan.php">Wisata Pendidikan</a>
-              </li>
+              <li><a style="color:grey" href="wisataalam.php">Wisata Alam</a></li>
+              <li><a style="color:grey" href="wisatasejarah.php">Wisata Sejarah</a></li>
+              <li><a style="color:grey" href="wisatapendidikan.php">Wisata Pendidikan</a></li>
             </ul>
           </li>
           <li><a href="artikel.php">Artikel</a></li>
@@ -71,13 +55,10 @@ $events = $req->fetchAll();
           <?php
           if (!isset($_SESSION['is_login'])) {
           ?>
-            <li>
-              <a href="login.php">Login</a>
-            </li>
+            <li><a href="login.php">Login</a></li>
           <?php } else { ?>
-            <li>
-              <a href="akunuser.php?logoutSubmit=1" class="logout">Logout (<?= $_SESSION['namauser']; ?>)</a>
-            </li><?php } ?>
+            <li><a href="akunuser.php?logoutSubmit=1" class="logout">Logout (<?= $_SESSION['namauser']; ?>)</a></li>
+          <?php } ?>
         </ul>
       </nav>
       <a href="#" class="nav-toggle">Menu<span></span></a>
@@ -92,41 +73,42 @@ $events = $req->fetchAll();
           <?php
           if (isset($_SESSION['admin'])) {
           ?>
-            <p>Bagaimana pengalaman & pendapat mereka yang telah menjadi pelanggan dan senantiasa menggunakan layanan dari kami ? Biarlah pelanggan kami yang berbicara & berbagi cerita dengan Anda</p>
+            <p>Bagaimana pengalaman & pendapat mereka yang telah menjadi pelanggan dan senantiasa menggunakan layanan dari kami? Biarlah pelanggan kami yang berbicara & berbagi cerita dengan Anda</p>
           <?php } ?>
         </div>
       </div>
     </section>
-    <!-- intro section -->
-    <!-- services section -->
-    <!-- work section -->
-    <!-- work section -->
-    <!-- our team section -->
     <!-- Show Testimonial -->
-    <section id="teams" class="section teams">
-      <div class="container">
-        <div class="row">
-          <?php
-          // Load file koneksi.php
-          include "koneksi.php";
-          $query = "SELECT * FROM testi"; // Query untuk menampilkan semua data testi
-          $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-          while ($data = mysqli_fetch_array($sql)) { // Ambil semua data dari hasil eksekusi $sql
-          ?>
-            <div class="col-md-3 col-sm-6">
+    <!-- Show Testimonial -->
+<section id="teams" class="section teams">
+  <div class="container">
+    <div class="row">
+      <?php
+      include "koneksi.php";
+      $query = "SELECT * FROM testi";
+      $sql = mysqli_query($connect, $query);
+      while ($data = mysqli_fetch_array($sql)) {
+      ?>
+        <div class="col-md-4 col-sm-6 panel-testimonial">
+          <div class="panel panel-default">
+            <div class="panel-heading">
               <div class="person">
                 <div class="person-content">
-                  <h4><?php echo "" . $data['nama_user'] . ""; ?></h4>
-                  <p><?php echo "" . $data['saran'] . ""; ?></p>
+                  <h4><?php echo $data['nama_user']; ?></h4>
                 </div>
               </div>
             </div>
-          <?php
-          }
-          ?>
+            <div class="panel-body">
+              <p><?php echo $data['saran']; ?></p>
+              <p>Rating: <?php echo $data['rating']; ?>/5</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      <?php } ?>
+    </div>
+  </div>
+</section>
+
     <!-- Add Testi section -->
     <?php
     if (!isset($_SESSION['user_biasa'])) {
@@ -140,12 +122,8 @@ $events = $req->fetchAll();
               <p>Kami sangat mengharapkan saran maupun masukan dari Anda agar website ini bisa semakin baik</p>
               <div id="message"></div>
               <form method="post" action="proses_simpan_testi.php">
-                <!--  <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Tulis saran maupun masukan..." > -->
-                <!-- <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." > -->
-                <!-- <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Project Details..."></textarea> -->
                 <input type="hidden" name="nama_user" value="<?php echo "" . $_SESSION['namauser'] . ""; ?>" />
                 <input type="text" name="saran" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Tulis saran maupun masukan...">
-                <!-- <input type="submit" id="submit" name="send" class="btn btn-large" value="Submit"> -->
                 <input type="submit" class="btn btn-large" value="Simpan">
               </form>
             </div>
@@ -166,7 +144,12 @@ $events = $req->fetchAll();
           <h6 align="center">Data Testimonial</h6>
           <br>
           <br>
-          <table border="2" width="80%" align="center">
+          <!-- Tambahkan tombol tambah testimonial -->
+          <div align="center">
+            <a href="#contact" class="btn btn-primary">Tambah Testimonial</a>
+          </div>
+          <br>
+          <table border="2" class="table-testimonial">
             <tr>
               <th>Nama User</th>
               <th>Saran</th>
@@ -206,10 +189,6 @@ $events = $req->fetchAll();
       </div>
     </div>
   </footer>
-  <!-- footer top -->
-
-  </footer>
-  <!-- Footer section -->
   <!-- JS FILES -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -220,5 +199,4 @@ $events = $req->fetchAll();
   <script src="js/main.js"></script>
   <script type="text/javascript" src="js/jquery.contact.js"></script>
 </body>
-
 </html>
