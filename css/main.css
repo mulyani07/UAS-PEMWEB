@@ -307,6 +307,23 @@ ul li {
 	-webkit-transform: translateY(0) rotate(-45deg);
 	transform: translateY(0) rotate(-45deg);
 }
+.panel-testimonial {
+	margin-bottom: 20px;
+}
+  .table-testimonial {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+}
+.table-testimonial th, .table-testimonial td {
+	text-align: center;
+	vertical-align: middle;
+}
+.panel-body {
+	text-align: center;
+	vertical-align: middle;
+}
 /* ------------------------------------------------------------------------------
 	Banner
 -------------------------------------------------------------------------------*/
@@ -351,7 +368,7 @@ ul li {
 	background-color: #000;
 }
 .intro h6 {
-	color: #fff;
+	color: #a29555;
 	margin-top: 0;
 }
 .intro p {
