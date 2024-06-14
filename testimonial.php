@@ -17,6 +17,7 @@ $events = $req->fetchAll();
 ?>
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
@@ -81,49 +82,52 @@ $events = $req->fetchAll();
     <!-- Show Testimonial -->
     <!-- Show Testimonial -->
     <?php
-    function generateStarRating($rating) {
+    function generateStarRating($rating)
+    {
       $stars = '';
-        for ($i = 1; $i <= 5; $i++) {
-          if ($i <= $rating) {
-            // Menggunakan simbol bintang (★) Unicode
-            $stars .= '★';
-          } else {
-            // Menggunakan simbol bintang kosong (☆) Unicode
-            $stars .= '☆';
-          }
+      for ($i = 1; $i <= 5; $i++) {
+        if ($i <= $rating) {
+          // Menggunakan simbol bintang (★) Unicode
+          $stars .= '★';
+        } else {
+          // Menggunakan simbol bintang kosong (☆) Unicode
+          $stars .= '☆';
         }
-        return $stars;
-}
-?>
+      }
+      return $stars;
+    }
+    ?>
 
-<section id="teams" class="section teams">
-  <div class="container">
-    <div class="row">
-      <?php
-      include "koneksi.php";
-      $query = "SELECT * FROM testi";
-      $sql = mysqli_query($connect, $query);
-      while ($data = mysqli_fetch_array($sql)) {
-      ?>
-        <div class="col-md-4 col-sm-6 panel-testimonial">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <div class="person">
-                <div class="person-content">
-                  <h4><?php echo $data['nama_user']; ?></h4>
+    <section id="teams" class="section teams">
+      <div class="container">
+        <div class="row">
+          <?php
+          include "koneksi.php";
+          $query = "SELECT * FROM testi";
+          $sql = mysqli_query($connect, $query);
+          while ($data = mysqli_fetch_array($sql)) {
+          ?>
+            <div class="col-md-4 col-sm-6 panel-testimonial">
+              <div class="panel panel-default">
+                <div class="panel-heading panel-custom">
+                  <h4 class="person"><?php echo $data['nama_user']; ?></h4>
+                </div>
+                <div class="panel-body panel-body-custom">
+                  <p><?php echo $data['saran']; ?></p>
+                  <p>Rating: <?php echo generateStarRating($data['rating']); ?></p>
+                  <?php if (isset($_SESSION['admin'])) {
+                  ?>
+                    <button class="btn btn-medium">
+                      <a href="proses_hapus_testi.php?id=<?php echo $data['id']; ?>">Hapus</a>
+                    </button>
+                  <?php } ?>
                 </div>
               </div>
             </div>
-            <div class="panel-body">
-              <p><?php echo $data['saran']; ?></p>
-              <p>Rating: <?php echo generateStarRating($data['rating']); ?></p>
-            </div>
-          </div>
+          <?php } ?>
         </div>
-      <?php } ?>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
     <!-- Add Testi section -->
     <?php
@@ -137,56 +141,26 @@ $events = $req->fetchAll();
               <h5>Tambahkan Testimonial</h5>
               <p>Kami sangat mengharapkan saran maupun masukan dari Anda agar website ini bisa semakin baik</p>
               <div id="message"></div>
-              <form method="post" action="proses_simpan_testi.php">
+              <form method="post" action="proses_simpan_testi.php" class="testi-form">
                 <input type="hidden" name="nama_user" value="<?php echo "" . $_SESSION['namauser'] . ""; ?>" />
-                <input type="text" name="saran" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Tulis saran maupun masukan...">
-                <input type="submit" class="btn btn-large" value="Simpan">
+                <div>
+                  <input id="saran" type="text" name="saran" placeholder="Tulis saran maupun masukan...">
+                  <label for="rating">Rating:</label>
+                  <select name="rating" id="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <input type="submit" class="btn btn-large" value="Simpan">
+                </div>
               </form>
             </div>
           </div>
         </div>
       </section>
     <?php } ?>
-    <!-- Testimonial Data Control -->
-    <section id="teams" class="section teams">
-      <div class="container">
-        <?php
-        if (!isset($_SESSION['admin'])) {
-        ?>
-          <br>
-          </li>
-        <?php } else { ?>
-          <br>
-          <h6 align="center">Data Testimonial</h6>
-          <br>
-          <br>
-          <!-- Tambahkan tombol tambah testimonial -->
-          <div align="center">
-            <a href="#contact" class="btn btn-primary">Tambah Testimonial</a>
-          </div>
-          <br>
-          <table border="2" class="table-testimonial">
-            <tr>
-              <th>Nama User</th>
-              <th>Saran</th>
-              <th>Aksi</th>
-            </tr>
-            <?php
-            // Load file koneksi.php
-            include "koneksi.php";
-            $query = "SELECT * FROM testi"; // Query untuk menampilkan semua data galeri
-            $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-            while ($data = mysqli_fetch_array($sql)) { // Ambil semua data dari hasil eksekusi $sql
-              echo "<tr>";
-              echo "<td>" . $data['nama_user'] . "</td>";
-              echo "<td>" . $data['saran'] . "</td>";
-              echo "<td><a href='proses_hapus_testi.php?id=" . $data['id'] . "'>Hapus</a></td>";
-              echo "</tr>";
-            }
-            ?>
-          </table>
-        <?php } ?>
-      </div>
     </section>
   </main>
   <!-- Footer section -->
@@ -215,4 +189,5 @@ $events = $req->fetchAll();
   <script src="js/main.js"></script>
   <script type="text/javascript" src="js/jquery.contact.js"></script>
 </body>
+
 </html>

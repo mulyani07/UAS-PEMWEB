@@ -41,10 +41,7 @@
  text-align: center;
 }
  .person {
- margin: 0 auto 50px;
-}
- .person-content {
- text-align: center;
+    text-align: center;
 }
  .person .social-icons li {
  display: inline-block;

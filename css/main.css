@@ -134,7 +134,7 @@ ul li {
 }
 #header.fixed {
 	background-color: rgb(0, 0, 0);
-	opacity:0.8;
+	opacity:0.9;
 }
 #header.fixed a {
 	color: #ffffff;
@@ -699,4 +699,25 @@ main {
 	padding-top: 12rem;
 	min-height: 77.5vh;
 	/* min-height: 100dvh; */
+}
+
+.testi-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#saran {
+	width: 75%;
+}
+
+.panel-custom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.panel-body-custom > button > * {
+	color: white;
 }
