@@ -1,4 +1,4 @@
-<p?php
+<?php
 session_start();
 $sesiData = !empty($_SESSION['sesiData']) ? $_SESSION['sesiData'] : '';
 if (!empty($sesiData['status']['msg'])) {
