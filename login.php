@@ -53,7 +53,7 @@ if(!empty($sesiData['status']['msg'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a  href="index.php"><img src="images/dj1.png" style="width:130px; height: 50px"></a>
+                <a  href="index.php"><img src="images/destinasijatim.jpg" style="width:130px; height: 50px"></a>
             </div>
              <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
