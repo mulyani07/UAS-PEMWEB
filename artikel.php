@@ -86,11 +86,7 @@ $events = $req->fetchAll();
       <div class="container">
         <div class="col-md-8 col-md-offset-2 text-center">
           <h1 class="title-intro">ARTIKEL</h1>
-          <?php
-          if (isset($_SESSION['admin'])) {
-          ?>
             <p>Berita terkini seputar objek wisata yang terdapat di daerah Yogyakarta</p>
-          <?php } ?>
         </div>
       </div>
     </section>

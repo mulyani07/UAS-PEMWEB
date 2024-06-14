@@ -91,13 +91,9 @@ $events = $req->fetchAll();
         <div class="col-md-8 col-md-offset-2 text-center">
           <h6 class="title-intro">TENTANG KAMI</h6>
           <br>
-          <?php
-          if (isset($_SESSION['admin'])) {
-          ?>
             <p>Selamat datang di Destinasi Jatim, platform terpercaya yang menyediakan rekomendasi objek wisata terbaik di Jawa Timur. Kami berdedikasi untuk membantu Anda menemukan keindahan tersembunyi dan keajaiban alam di setiap sudut Jawa Timur. Mulai dari pantai eksotis, pegunungan menakjubkan, hingga warisan budaya yang kaya, kami siap menjadi panduan Anda dalam menjelajahi pesona yang ada.
               Tim kami terdiri dari para ahli pariwisata yang memiliki pengetahuan mendalam dan pengalaman luas dalam industri ini. Dengan semangat dan komitmen untuk memberikan informasi akurat dan terkini, kami memastikan setiap rekomendasi yang kami berikan dapat memenuhi kebutuhan liburan Anda.
               Mari bergabung dengan kami dan temukan petualangan seru serta pengalaman tak terlupakan di Jawa Timur. Bersama Destinasi Jatim, perjalanan Anda dimulai di sini.</p>
-          <?php } ?>
         </div>
       </div>
     </section>

@@ -71,11 +71,7 @@ $events = $req->fetchAll();
         <div class="col-md-8 col-md-offset-2 text-center">
           <h1 class="title-intro">TESTIMONIAL</h1>
           <br>
-          <?php
-          if (isset($_SESSION['admin'])) {
-          ?>
             <p>Bagaimana pengalaman & pendapat mereka yang telah menjadi pelanggan dan senantiasa menggunakan layanan dari kami? Biarlah pelanggan kami yang berbicara & berbagi cerita dengan Anda</p>
-          <?php } ?>
         </div>
       </div>
     </section>
