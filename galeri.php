@@ -115,105 +115,15 @@ h7{
 
 <section id="work" class="work-section">
   <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">KAWAH IJEN</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi Keindahan Alam Kawah Ijen dan Temukan Spot Foto Yang Menarik Untuk di Kunjungi.</p>
+    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">Wisata Alam</h3>
+    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Nikmati keindahan alam Jawa Timur yang memukau dengan berbagai destinasi wisata alam yang menakjubkan.</p>
   </div>
 
   <?php
   // Load file koneksi.php
   include "koneksi.php";
   
-  $query = "SELECT * FROM galeri WHERE nama_tempat IN ('Kawah Ijen', 'Blue Fire' , 'Sunrise Spot' , 'Latar Kawah Ijen ' , 'Hutan Mati')"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-
-  <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">GUNUNG BROMO</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi Keindahan Alam Gunung Bromo dan Temukan Spot Foto Yang Menarik Untuk di Kunjungi.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat IN ('Gunung Bromo', 'Pantai Berbisik' , 'Penanjakan 1' , 'Bukit Cinta' , 'Bukit Teletubbies')"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-
-<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">PANTAI PAPUMA</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi Keindahan Alam Pantai Papuma dan Temukan Spot Foto Yang Menarik Untuk di Kunjungi.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat IN ('Pantai Papuma', 'Model 1' , 'Model 2' , 'Model 3' , 'Model 4')"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-
-<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">TAMAN NASIONAL BALURAN</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi Keindahan Alam Taman Nasional Baluran dan Temukan Spot Foto Yang Menarik Untuk di Kunjungi.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat IN ('Taman Nasional Baluran','Savana Bekol' , 'Pantai Bama' , 'Evergreen' , 'Hutan Mangrove')"; // Query untuk menampilkan semua data galeri
+  $query = "SELECT * FROM galeri WHERE jenis_wisata IN ('Wisata Alam')"; // Query untuk menampilkan semua data galeri
   $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
   
   while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
@@ -236,105 +146,16 @@ h7{
 </section>
 <section id="work" class="work-section">
   <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">CANDI BADUT</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Selami Pesona Candi Badut, Sebuah Permata Wisata Sejarah dan Budaya yang Menyimpan Kisah dan Keindahan Arsitektural yang Memukau.</p>
+    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">Wisata Sejarah</h3>
+    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi kekayaan situs bersejarah di Jawa Timur.</p>
+  </div>
   </div>
 
   <?php
   // Load file koneksi.php
   include "koneksi.php";
   
-  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Candi Badut'"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-
-  <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">MUSEUM MPU TANTULAR</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi Museum Mpu Tantular, sebuah kapsul waktu yang memamerkan koleksi bersejarah dan budaya yang memukau, menawarkan wawasan mendalam tentang warisan yang tak ternilai.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Museum Mpu Tantular'"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-
-  <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">MONUMEN KAPAL SELAM</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi Galeri Wisata Sejarah dan Budaya Monumen Kapal Selam, Yang Menampilkan Interior Kapal Serta Peralatan Militer Historis Milik Indonesia.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Monumen Kapal Selam'"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-
-  <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">BENTENG PENDEM VAN DEN BOSCH</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi keindahan dan kedalaman sejarah Benteng Pendem Van Den Bosch, sebuah benteng peninggalan Belanda yang kaya akan cerita dan peristiwa bersejarah.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Benteng Pendem Van Den Bosch'"; // Query untuk menampilkan semua data galeri
+  $query = "SELECT * FROM galeri WHERE jenis_wisata IN ('Wisata Sejarah')"; // Query untuk menampilkan semua data galeri
   $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
   
   while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
@@ -357,15 +178,16 @@ h7{
 </section>
 <section id="work" class="work-section">
   <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">CIMORY DIARY PRIGEN</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Selamat datang di Galeri Wisata Pendidikan Cimory Dairy Prigen, sebuah destinasi yang mengedukasi pengunjung tentang dunia peternakan dan proses produksi susu yang menarik.</p>
+    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">Wisata Pendidikan</h3>
+    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Temukan keajaiban pendidikan di Jawa Timur.</p>
+  </div>
   </div>
 
   <?php
   // Load file koneksi.php
   include "koneksi.php";
   
-  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Cimory Diary Prigen'"; // Query untuk menampilkan semua data galeri
+  $query = "SELECT * FROM galeri WHERE jenis_wisata IN ('Wisata Pendidikan')"; // Query untuk menampilkan semua data galeri
   $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
   
   while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
@@ -385,76 +207,14 @@ h7{
     <?php
   }
   ?>
-
-  <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">DESA ADAT KEMIREN</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Selamat datang di Galeri Wisata Pendidikan Desa Adat Kemiren, dimana Anda dapat menyelami keunikan budaya lokal dan mengalami kehidupan sehari-hari masyarakat setempat.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Desa Adat Kemiren'"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-
-  <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px; margin-top: 20px; border: 3px solid #808080; border-radius: 20px; padding: 30px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-    <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">PUSAT PENELITIAN KOPI DAN KAKAO</h3>
-    <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Selamat datang di Galeri Wisata Pendidikan Pusat Penelitian Kopi dan Kakao, di mana Anda dapat menjelajahi dan memperdalam pengetahuan tentang proses inovatif dalam peningkatan kualitas kopi dan kakao.</p>
-  </div>
-
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
-  
-  $query = "SELECT * FROM galeri WHERE nama_tempat = 'Pusat Penelitian Kopi dan Kakao'"; // Query untuk menampilkan semua data galeri
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
-        </div>
-      </div>
-    <?php
-  }
-  ?>
-  <div class="container"></div>
 </section>
-<sectiion>
 <div class="image-data-section">
     <?php 
         if(isset($_SESSION['admin'])){
     ?>
     <div class="container">
         <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 10px; margin-top: 10px; border: 3px solid #808080; border-radius: 10px; padding: 10px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-          <h6 class="text-center mt-4 mb-4" style="font-weight: 700">Data Gambar</h6>
+          <h6 class="text-center mt-4 mb-4" style="font-weight: 700">Administrasi Data Gambar</h6>
         </div>
     </div>
         <div class="text-center mb-4" style="padding: 20px;">
