@@ -132,11 +132,8 @@ ul li {
 	letter-spacing:7px;
 }
 #header.fixed {
-	background-color: rgb(190, 159, 75);
-	opacity:0.8;
-}
-#header.fixed a {
-	color: #000000;
+	background-color: rgb(0, 0, 0);
+	opacity:0.9;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
@@ -347,7 +344,7 @@ ul li {
 	$intro
 ========================================================================== */
 .intro {
-	background-color: #a29555;
+	background-color: #bca52f;
 }
 .intro h3 {
 	color: #fff;
