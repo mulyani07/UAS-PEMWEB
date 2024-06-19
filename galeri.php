@@ -50,7 +50,7 @@ h7{
 .card{
   margin-left: auto; 
   padding: 10px; 
-  background-color: #BCC6CC; 
+  background-color: #f5f5f5; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   margin-bottom: 25px;
 }
@@ -134,8 +134,9 @@ h7{
           <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
             <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
+          <div style="padding: 15px; text-align: center; background-color: #ffff; color: white; font-size: 1.2em; border-radius: 5px; font-weight: bold;">
+            <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
+          </div>
           </div>
         </a>
         </div>
@@ -166,8 +167,8 @@ h7{
           <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
             <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
+          <div style="padding: 15px; text-align: center; background-color: #ffff; color: white; font-size: 1.2em; border-radius: 5px; font-weight: bold; ">
+            <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
           </div>
         </a>
         </div>
@@ -198,8 +199,8 @@ h7{
           <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
             <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
-          <div style="padding: 15px; text-align: center; background-color: #808080; color: white; font-size: 1.2em; border-radius: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-            <a style="text-decoration: none; color: white;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
+          <div style="padding: 15px; text-align: center; background-color: #ffff; color: white; font-size: 1.2em; border-radius: 5px; font-weight: bold;">
+            <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
           </div>
         </a>
         </div>
@@ -207,6 +208,7 @@ h7{
     <?php
   }
   ?>
+  <div class="container"></div>
 </section>
 <div class="image-data-section">
     <?php 
@@ -286,3 +288,4 @@ h7{
 <script type="text/javascript" src="js/jquery.contact.js"></script>
 </body>
 </html>
+
