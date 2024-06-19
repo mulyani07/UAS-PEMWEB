@@ -128,17 +128,68 @@ h7{
   
   while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
     ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="col-lg-3 col-md-6 col-sm-6 work">
+        <div class="card">
+          <a href="images/foto/alam/<?= $data['foto']; ?>" class="work-box">
+            <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
+              <img src="images/foto/alam/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 15px; text-align: center; background-color: #ffff; color:white; font-size: 1.2em; border-radius: 5px; font-weight: bold;">
+              <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a>
+              <br>
+          </a>
+        </div>
+        <div style="background-color: #ffff; text-align: center;">
+        <?php 
+        if(isset($_SESSION['admin'])){
+        ?>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editGaleriModal<?php echo $data['id']; ?>">
+        Edit
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="editGaleriModal<?php echo $data['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="editGaleriModalLabel<?php echo $data['id']; ?>" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <label class="modal-title" id="editGaleriModalLabel<?php echo $data['id']; ?>">Perbarui Galeri</label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <a aria-hidden="true" style="color: black;">&times;</a>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="post" action="proses_ubah.php?id=<?php echo $data['id']; ?>" enctype="multipart/form-data">
+                  <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
+                  <div class="form-group">
+                    <label for="jenis_wisata">Jenis Wisata</label>
+                      <select class="form-control" id="jenis_wisata" name="jenis_wisata">
+                        <option value="Wisata Alam" <?php if($data['jenis_wisata'] == 'Wisata Alam') echo 'selected'; ?>>Wisata Alam</option>
+                        <option value="Wisata Sejarah" <?php if($data['jenis_wisata'] == 'Wisata Sejarah') echo 'selected'; ?>>Wisata Sejarah</option>
+                        <option value="Wisata Pendidikan" <?php if($data['jenis_wisata'] == 'Wisata Pendidikan') echo 'selected'; ?>>Wisata Pendidikan</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="nama_tempat">Nama Tempat</label>
+                    <input type="text" class="form-control" id="nama_tempat" name="nama_tempat" value="<?php echo $data['nama_tempat']; ?>">
+                  </div>
+                  <div class="form-group">
+                    <label for="foto">Foto</label>
+                    <br>
+                    <input type="checkbox" name="ubah_foto" value="true"> Centang jika ingin mengubah foto<br>
+                    <input type="file" class="form-control-file" id="foto" name="foto">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <div style="padding: 15px; text-align: center; background-color: #ffff; color: white; font-size: 1.2em; border-radius: 5px; font-weight: bold;">
-            <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-          </div>
-        </a>
+        </div>
+        <!-- Modal -->
+        <a href="proses_hapus.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Hapus</a>
+        <?php } ?>
+        </div>
         </div>
       </div>
     <?php
@@ -150,7 +201,6 @@ h7{
     <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">Wisata Sejarah</h3>
     <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Jelajahi kekayaan situs bersejarah di Jawa Timur.</p>
   </div>
-  </div>
 
   <?php
   // Load file koneksi.php
@@ -161,16 +211,68 @@ h7{
   
   while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
     ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="col-lg-3 col-md-6 col-sm-6 work">
+        <div class="card">
+          <a href="images/foto/sejarah/<?= $data['foto']; ?>" class="work-box">
+            <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
+              <img src="images/foto/sejarah/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 15px; text-align: center; background-color: #ffff; font-size: 1.2em; border-radius: 5px; font-weight: bold;">
+              <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a>
+              <br>
+          </a>
+        </div>
+        <div style="background-color: #ffff; text-align: center;">
+        <?php 
+        if(isset($_SESSION['admin'])){
+        ?>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editGaleriModal<?php echo $data['id']; ?>">
+        Edit
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="editGaleriModal<?php echo $data['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="editGaleriModalLabel<?php echo $data['id']; ?>" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <label class="modal-title" id="editGaleriModalLabel<?php echo $data['id']; ?>">Perbarui Galeri</label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <a aria-hidden="true" style="color: black;">&times;</a>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="post" action="proses_ubah.php?id=<?php echo $data['id']; ?>" enctype="multipart/form-data">
+                  <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
+                  <div class="form-group">
+                    <label for="jenis_wisata">Jenis Wisata</label>
+                      <select class="form-control" id="jenis_wisata" name="jenis_wisata">
+                        <option value="Wisata Alam" <?php if($data['jenis_wisata'] == 'Wisata Alam') echo 'selected'; ?>>Wisata Alam</option>
+                        <option value="Wisata Sejarah" <?php if($data['jenis_wisata'] == 'Wisata Sejarah') echo 'selected'; ?>>Wisata Sejarah</option>
+                        <option value="Wisata Pendidikan" <?php if($data['jenis_wisata'] == 'Wisata Pendidikan') echo 'selected'; ?>>Wisata Pendidikan</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="nama_tempat">Nama Tempat</label>
+                    <input type="text" class="form-control" id="nama_tempat" name="nama_tempat" value="<?php echo $data['nama_tempat']; ?>">
+                  </div>
+                  <div class="form-group">
+                    <label for="foto">Foto</label>
+                    <br>
+                    <input type="checkbox" name="ubah_foto" value="true"> Centang jika ingin mengubah foto<br>
+                    <input type="file" class="form-control-file" id="foto" name="foto">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <div style="padding: 15px; text-align: center; background-color: #ffff; color: white; font-size: 1.2em; border-radius: 5px; font-weight: bold; ">
-            <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
+        </div>
+        <!-- Modal -->
+        <a href="proses_hapus.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Hapus</a>
+        <?php } ?>
+        </div>
         </div>
       </div>
     <?php
@@ -182,7 +284,6 @@ h7{
     <h3 style="font-weight: 700; color: #fff; text-shadow: 3px 3px 6px rgba(0,0,0,0.6);">Wisata Pendidikan</h3>
     <p style="color: #fff; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Temukan keajaiban pendidikan di Jawa Timur.</p>
   </div>
-  </div>
 
   <?php
   // Load file koneksi.php
@@ -193,16 +294,68 @@ h7{
   
   while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
     ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 work" >
-      <div class="card">
-        <a href="images/foto/<?= $data['foto']; ?>" class="work-box">
-          <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
-            <img src="images/foto/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="col-lg-3 col-md-6 col-sm-6 work">
+        <div class="card">
+          <a href="images/foto/pendidikan/<?= $data['foto']; ?>" class="work-box">
+            <div class="object-fit-cover" style="height: 270px; overflow: hidden;">
+              <img src="images/foto/pendidikan/<?= $data['foto']; ?>" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 15px; text-align: center; background-color: #ffff; font-size: 1.2em; border-radius: 5px; font-weight: bold;">
+              <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a>
+              <br>
+          </a>
+        </div>
+        <div style="background-color: #ffff; text-align: center;">
+        <?php 
+        if(isset($_SESSION['admin'])){
+        ?>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editGaleriModal<?php echo $data['id']; ?>">
+        Edit
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="editGaleriModal<?php echo $data['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="editGaleriModalLabel<?php echo $data['id']; ?>" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <label class="modal-title" id="editGaleriModalLabel<?php echo $data['id']; ?>">Perbarui Galeri</label>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <a aria-hidden="true" style="color: black;">&times;</a>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="post" action="proses_ubah.php?id=<?php echo $data['id']; ?>" enctype="multipart/form-data">
+                  <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
+                  <div class="form-group">
+                    <label for="jenis_wisata">Jenis Wisata</label>
+                      <select class="form-control" id="jenis_wisata" name="jenis_wisata">
+                        <option value="Wisata Alam" <?php if($data['jenis_wisata'] == 'Wisata Alam') echo 'selected'; ?>>Wisata Alam</option>
+                        <option value="Wisata Sejarah" <?php if($data['jenis_wisata'] == 'Wisata Sejarah') echo 'selected'; ?>>Wisata Sejarah</option>
+                        <option value="Wisata Pendidikan" <?php if($data['jenis_wisata'] == 'Wisata Pendidikan') echo 'selected'; ?>>Wisata Pendidikan</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="nama_tempat">Nama Tempat</label>
+                    <input type="text" class="form-control" id="nama_tempat" name="nama_tempat" value="<?php echo $data['nama_tempat']; ?>">
+                  </div>
+                  <div class="form-group">
+                    <label for="foto">Foto</label>
+                    <br>
+                    <input type="checkbox" name="ubah_foto" value="true"> Centang jika ingin mengubah foto<br>
+                    <input type="file" class="form-control-file" id="foto" name="foto">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <div style="padding: 15px; text-align: center; background-color: #ffff; color: white; font-size: 1.2em; border-radius: 5px; font-weight: bold;">
-            <a style="text-decoration: none; color: black;"><?= $data['nama_tempat']; ?></a> <!-- Displaying the name of the place below the photo inside the polaroid with enhanced styling -->
-          </div>
-        </a>
+        </div>
+        <!-- Modal -->
+        <a href="proses_hapus.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Hapus</a>
+        <?php } ?>
+        </div>
         </div>
       </div>
     <?php
@@ -210,65 +363,60 @@ h7{
   ?>
   <div class="container"></div>
 </section>
-<div class="image-data-section">
-    <?php 
-        if(isset($_SESSION['admin'])){
+<section class="container">
+<?php
+    if (isset($_SESSION['admin'])) {
     ?>
-    <div class="container">
-        <div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 10px; margin-top: 10px; border: 3px solid #808080; border-radius: 10px; padding: 10px; background-color: #BCC6CC; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
-          <h6 class="text-center mt-4 mb-4" style="font-weight: 700">Administrasi Data Gambar</h6>
+      <!-- Add Galeri -->
+      <section class="service section flex-center" style="text-align: center; padding: 10px;">
+        <button type="button" class="btn btn-primary btn-add" data-toggle="modal" data-target="#addGaleriModal" style="width: 200px; height: 50px;">
+          Tambah Galeri
+        </button>
+      </section>
+      <!-- Modal -->
+      <div class="modal fade" id="addGaleriModal" tabindex="-1" role="dialog" aria-labelledby="addGaleriModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="addGaleriModalLabel">Tambah Galeri</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post" action="proses_simpan.php" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label for="jenis_wisata">Jenis Wisata</label>
+                    <select class="form-control" id="jenis_wisata" name="jenis_wisata">
+                      <option value="Wisata Alam">Wisata Alam</option>
+                      <option value="Wisata Sejarah">Wisata Sejarah</option>
+                      <option value="Wisata Pendidikan">Wisata Pendidikan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                  <label for="nama_tempat">Nama Tempat</label>
+                  <input type="text" class="form-control" id="nama_tempat" name="nama_tempat">
+                </div>
+                <div class="form-group">
+                  <label for="foto">Foto</label>
+                  <input type="file" class="form-control-file" id="foto" name="foto">
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Simpan</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-    </div>
-        <div class="text-center mb-4" style="padding: 20px;">
-            <a href="form_simpan.php" class="btn btn-primary btn-lg">Tambah Data</a>
-        </div>
-        <div class="container">
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Gambar</th>
-                        <th>Jenis Wisata</th>
-                        <th>Nama Tempat</th>
-                        <th colspan="2">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    // Load file koneksi.php
-                    include "koneksi.php";
-
-                    $query = "SELECT * FROM galeri"; // Query untuk menampilkan semua data galeri
-                    $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-
-                    while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-                        echo "<tr>";
-                        echo "<td class='text-center'><img src='images/foto/".$data['foto']."' class='img-fluid' style='width: 400px; height: 200px;'></td>";
-                        echo "<td style='text-align: center;'>".$data['jenis_wisata']."</td>";
-                        echo "<td style='text-align: center;'>".$data['nama_tempat']."</td>";
-                        echo "<td style='text-align: center;'><a href='form_ubah.php?id=".$data['id']."' class='btn btn-warning'>Ubah</a></td>";
-                        echo "<td style='text-align: center;'><a href='proses_hapus.php?id=".$data['id']."' class='btn btn-danger'>Hapus</a></td>";
-                        echo "</tr>";
-                    }
-                    ?>
-                </tbody>
-            </table>
-        </div>
-        </div>
-    </div>
-    <?php 
-        }
-    ?>
+      </div>
+    <?php } ?>
 </section>
-<!-- Footer section -->
 <footer class="footer">
   <div class="footer-top section">
     <div class="container" align="center">
       <div class="row">
-        <a style="padding:20px"; href="#"><i class="fa fa-facebook"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-twitter"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-linkedin"></i></a>
-        <a style="padding:20px"; href="#"><i class="fa fa-google-plus"></i></a>
+        <a style="padding:20px"; href="https://github.com/mulyani07/UAS-PEMWEB"><i class="fa fa-github"></i></a>
         <br>
         <br>
       <p>Copyright © 2024 destinasijatim.com All Rights Reserved. Made by Kelompok 10</p>
