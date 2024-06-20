@@ -109,9 +109,12 @@ $events = $req->fetchAll();
             <div class="panel-body">
               <p> <?php echo "" . $data['keterangan'] . ""; ?></p>
               <a <?php echo "href=" . $data['url'] . ""; ?> class="btn btn-default">Read More</a>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editArticleModal<?php echo $data['id']; ?>">
-                Change
-              </button>
+              <?php if (isset($_SESSION['admin'])) { ?>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editArticleModal<?php echo $data['id']; ?>">
+                  Change
+                </button>
+                <a href="proses_hapus_artikel.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Delete</a>
+              <?php } ?>
               <!-- Modal -->
               <div class="modal fade" id="editArticleModal<?php echo $data['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="editArticleModalLabel<?php echo $data['id']; ?>" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -153,7 +156,6 @@ $events = $req->fetchAll();
                 </div>
               </div>
               <!-- Modal -->
-              <a href="proses_hapus_artikel.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Delete</a>
             </div>
           </div>
         <?php
